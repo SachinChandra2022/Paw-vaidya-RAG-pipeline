@@ -194,7 +194,7 @@ def initialize_model():
     global vector_store, rag_chain, general_llm
     
     # Check if data exists and load it
-    csv_path = "RAG-chatbot-API/data.csv"
+    csv_path = "data.csv"
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"Dataset not found at {csv_path}")
     
