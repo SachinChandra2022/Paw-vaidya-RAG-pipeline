@@ -1,9 +1,7 @@
 services:
   - type: web
-    name: paw-vaidya-rag-api
+    name: rag-chatbot-api
     env: docker
     plan: free
     dockerfilePath: ./Dockerfile
-    envVars:
-      - key: OPENAI_API_KEY
-        value: your_api_key_here
+    autoDeploy: true
